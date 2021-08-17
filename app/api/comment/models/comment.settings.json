@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text_comment": {
+      "type": "richtext"
+    },
+    "email": {
+      "type": "email"
+    },
+    "news_item": {
+      "via": "comments",
+      "model": "news-items"
+    }
+  }
+}
